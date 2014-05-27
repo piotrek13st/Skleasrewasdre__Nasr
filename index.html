@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PKS I.C.</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <meta name="Description"
+          content="WinterShop.pl to sklep narciarski. W ofercie posiadamy: narty, snowboardy i inne. Sklep bogato wyposażony sportem zimowym! Sprawdź bogatą ofertę!"/>
+    <meta name="Keywords"
+          content="sklep snowboardowy, sklep narciarski, narty sklep, narty, snowboard sklep, snowboard,"/>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"/>-->
+    <!--<meta name="Robots" content="index,follow"/>-->
+
+    <link rel="shortcut icon" href="resources/images/Flat-Browser.ico"/>
+
+    <link rel="stylesheet" href="css/index_style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+        /*scripts for input boxes*/
+        $(document).ready(function () {
+            $(".defaultText").focus(function () {
+                $(this).addClass("defaultTextActive");
+                if ($(this).val() == $(this)[0].title) {
+                    $(this).val("");
+                }
+            });
+
+            $(".defaultText").blur(function () {
+                $(this).removeClass("defaultTextActive");
+                if ($(this).val() == "") {
+                    $(this).val($(this)[0].title);
+                }
+            });
+
+            $(".defaultText").blur();
+
+            // Requried: Navigation bar drop-down
+            $("nav ul li").hover(function() {
+                $(this).addClass("active");
+                $(this).find("ul").show().animate({opacity: 1}, 600);
+            },function() {
+                $(this).find("ul").hide().animate({opacity: 0}, 400);
+                $(this).removeClass("active");
+            });
+
+            // Requried: Addtional styling elements
+            $('nav ul li ul li:first-child').prepend('<li class="arrow"></li>');
+            $('nav ul li:first-child').addClass('first');
+            $('nav ul li:last-child').addClass('last');
+            $('nav ul li ul').parent().append('<span class="dropdown"></span>').addClass('drop');
+        });
+    </script>
+</head>
+<body>
+
+<div class="top background_top"></div>
+<div class="body">
+
+    <div class="head">
+    <table class="head">
+        <tr>
+            <td rowspan="2"><a href="index.html"><img class="logo" src="resources/images/pks_is_coming.png"
+                                                      alt="Winter is  coming"></a>
+            </td>
+
+            <td rowspan="2">
+                <img class="logo2"  src="resources/images/autobus2.jpg">
+            </td>
+
+            <td rowspan="2">
+                <div class="content">
+                            <span class="subheader-small white bold">
+                            Skontaktuj się z nami!</span><br/>
+                    <a href="mailto:info@pic.pl" class="subheader-small smaller white bold"
+                       title="info@pic.pl">info@pksic.pl</a><br/>
+                            <span class="subheader-small smaller emphase bold">
+                                 <img src="resources/images/phone_ico.jpg"> 13 614 77 78<br/>
+                                 <img src="resources/images/phone_mobile_ico.jpg"> 511 502 050
+                            </span>
+                </div>
+            </td>
+
+            <td colspan="2" class="login white bold background_top">
+                <form style="display: inline;" name="login" method="post"
+                      action="http://guitarcenter.pl/catalog/login.php/action/process">
+                    <input class="login_box bold defaultText" type="text" name="email_address"
+                           title="email">
+                    <input class="login_box bold defaultText" type="password" name="password"
+                           title="xxxxxx">
+                    <input type="submit" class="toplogin_btn" name="login" value="logowanie">
+                </form>
+                | <a class="topregister" href="rejestracja.html">rejestracja</a>
+            </td>
+
+
+        </tr>
+        <tr>
+            <td style="text-align: right;">
+                <table style="float: right">
+                    <tr>
+                        <td><a class="hover" href="jak_kupowac.html"><img src="resources/images/btn_kontakt.png"
+                                                                          alt="Jak kupowac"></a></td>
+                        <td><a class="hover" href="kontakt.html"><img src="resources/images/btn_jakkupowac.png"
+                                                                      alt="Kontakt"></a></td>
+                        <td><a class="hover" href="regulamin.html.html"><img src="resources/images/btn_regulamin.png"
+                                                                             alt="regulamin"></a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </div>
+
+    <!----------------------------  MENU PANEL ------------------------------------------->
+       <nav class="blue">
+           <ul class="clear">
+           <li><a href="#">Komunikaty</a></li>
+
+           <li><a href="#">Rozkład Jazdy </a></li>
+
+           <li><a href="#">Strefa klienta</a>
+               <ul>
+                   <li ><a href="#">Rezerwacja biletów</a></li>
+                   <li><a href="#">Cennik</a></li>
+                   <li><a href="#">Bilety okresowe</a></li>
+                   <li><a href="#">Ulgi</a></li>
+                   <li><a href="#">Punkty sprzedaży biletów</a></li>
+                   <li><a href="#">Sugestie</a></li>
+               </ul>
+           </li>
+
+           <li><a href="#">Wynajem autokarów</a>
+               <ul>
+                   <li><a href="#" >Oferta</a></li>
+                   <li><a href="#" >Regulamin</a></li>
+               </ul>
+           </li>
+           <li><a href="#">O nas</a></li>
+           <li><a href="#">Regulamin</a></li>
+           <li><a href="#">Kontakt</a></li>
+
+           </ul>
+       </nav>
+
+
+    <div class="main">
+
+    </div>
+</div>
+
+
+</body>
+</html>

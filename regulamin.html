@@ -1,9 +1,362 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+   <title>Regulamin</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+
+    <meta name="Description"
+          content="Sklep narciarski WinterShop.pl oferuje narty, snowboard, buty narciarskie i snowboardowe, kijki narciarskie, kaski, gogle. Sklep bogato wyposażony sprzętem zimowym! Sprawdź Naszą ofertę!"/>
+    <meta name="Keywords"
+          content="sklep snowboardowy, sklep narciarski, narty sklep, narty, snowboard sklep, snowboard,"/>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"/>-->
+    <!--<meta name="Robots" content="index,follow"/>-->
+
+    <link rel="shortcut icon" href="resources/images/Flat-Browser.ico"/>
+
+    <link rel="stylesheet" href="css/index_style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+        /*scripts for input boxes*/
+        $(document).ready(function () {
+            $(".defaultText").focus(function () {
+                $(this).addClass("defaultTextActive");
+                if ($(this).val() == $(this)[0].title) {
+                    $(this).val("");
+                }
+            });
+
+            $(".defaultText").blur(function () {
+                $(this).removeClass("defaultTextActive");
+                if ($(this).val() == "") {
+                    $(this).val($(this)[0].title);
+                }
+            });
+
+            $(".defaultText").blur();
+
+            // Requried: Navigation bar drop-down
+            $("nav ul li").hover(function() {
+                $(this).addClass("active");
+                $(this).find("ul").show().animate({opacity: 1}, 600);
+            },function() {
+                $(this).find("ul").hide().animate({opacity: 0}, 400);
+                $(this).removeClass("active");
+            });
+
+            // Requried: Addtional styling elements
+            $('nav ul li ul li:first-child').prepend('<li class="arrow"></li>');
+            $('nav ul li:first-child').addClass('first');
+            $('nav ul li:last-child').addClass('last');
+            $('nav ul li ul').parent().append('<span class="dropdown"></span>').addClass('drop');
+        });
+    </script>
 </head>
 <body>
-<p>buasbfiadbsivbdsiabviadbsvbadsi</p>
+<div class="top background_top"></div>
+<div class="body">
+
+    <div class="head">
+    <table class="head">
+        <tr>
+            <td rowspan="2"><a href="index.html"><img class="logo" src="resources/images/pks_is_coming.png"
+                                                      alt="Winter is  coming"></a>
+            </td>
+
+            <td rowspan="2">
+                <img class="logo2"  src="resources/images/autobus2.jpg">
+            </td>
+
+            <td rowspan="2">
+                <div class="content">
+                            <span class="subheader-small white bold">
+                            Skontaktuj się z nami!</span><br/>
+                    <a href="mailto:info@pic.pl" class="subheader-small smaller white bold"
+                       title="info@pic.pl">info@wintershop.pl</a><br/>
+                            <span class="subheader-small smaller emphase bold">
+                                 <img src="resources/images/phone_ico.jpg"> 13 614 77 78<br/>
+                                 <img src="resources/images/phone_mobile_ico.jpg"> 511 502 050
+                            </span>
+                </div>
+            </td>
+
+            <td colspan="2" class="login white bold background_top">
+                <form style="display: inline;" name="login" method="post"
+                      action="http://guitarcenter.pl/catalog/login.php/action/process">
+                    <input class="login_box bold defaultText" type="text" name="email_address"
+                           title="email">
+                    <input class="login_box bold defaultText" type="password" name="password"
+                           title="xxxxxx">
+                    <input type="submit" class="toplogin_btn" name="login" value="logowanie">
+                </form>
+                | <a class="topregister" href="rejestracja.html">rejestracja</a>
+            </td>
+
+
+        </tr>
+        <tr>
+            <td style="text-align: right;">
+                <table style="float: right">
+                    <tr>
+                        <td><a class="hover" href="jak_kupowac.html"><img src="resources/images/btn_kontakt.png"
+                                                                          alt="Jak kupowac"></a></td>
+                        <td><a class="hover" href="kontakt.html"><img src="resources/images/btn_jakkupowac.png"
+                                                                      alt="Kontakt"></a></td>
+                        <td><a class="hover" href="regulamin.html"><img src="resources/images/btn_regulamin.png"
+                                                                             alt="regulamin"></a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </div>
+
+    <!----------------------------  MENU PANEL ------------------------------------------->
+       <nav class="blue">
+           <ul class="clear">
+           <li><a href="#">Strona główna</a></li>
+
+           <li><a href="#">Dostawa</a></li>
+
+           <li><a href="#">Strefa klienta</a>
+               <ul>
+                   <li><a href="#">Cennik</a></li>
+                   <li><a href="#">Aktualne promocje</a></li>
+               </ul>
+           </li>
+           <li><a href="#">O nas</a></li>
+           <li><a href="#">Regulamin</a></li>
+           <li><a href="#">Kontakt</a></li>
+
+           </ul>
+       </nav>
+
+
+    <div class="main">
+
+		<div class="rulebook"><p align="center">
+	<b>REGULAMIN SKLEPU INTERNETOWEGO WINTERSHOP.PL</b></p><br>
+<p>
+	Sklep internetowy WinterShop, działający pod adresem www.wintershop.pl (zwany dalej Sklep internetowy), posługujący się adresem poczty elektronicznej info@wintershop.pl prowadzony jest przez spółkę WinterShop spółka&nbsp; z ograniczoną odpowiedzialnością z siedzibą w Krakowie (zwana dalej Spółką) przy ul. Czarnowiejska 3, 31-332 Kraków wpisaną do Rejestru Przedsiębiorców prowadzonego przez Sąd Rejonowy dla m. st. Krakowa, XII Wydział Gospodarczy Krajowego Rejestru Sądowego pod numerem KRS 0000126879, NIP 5262638864, REGON 015222269, o wpłaconym kapitale zakładowym w wysokości 5 550 000 złotych.</p><br>
+<p align="left">
+	<b>1. POSTANOWIENIA OGÓLNE</b></p><br>
+<p>
+	1. Regulamin określa zasady prowadzenia przez Sklep internetowy działalności polegającej na sprzedaży Klientom produktów szczegółowo określonych na stronie internetowej Sklepu oraz zasady korzystania ze Sklepu internetowego oraz składania zamówień.</p>
+<p>
+	2. Sklep internetowy działający się pod adresem www.skiteam.com.pl służy do dokonywania za pośrednictwem sieci Internet zakupów artykułów sportowych znajdujących się również w ofercie stacjonarnych sklepów Spółki.</p><br>
+<p align="left">
+	<b>2. ZASADY DOKONYWANIA ZAKUPÓW</b></p><br>
+<p>
+	1. Zakupy w Sklepie internetowym mogą być dokonywane po dokonaniu rejestracji w Sklepie internetowym. Podstawowym warunkiem realizacji zamówienia jest prawidłowe wypełnienie formularza zamówienia znajdującego się na stronie www.skiteam.com.pl, wybór formy płatności i dostawy przesłanie zamówienia.</p>
+<p>
+	2. Rejestracja w Sklepie internetowym jest bezpłatna. Klient zobowiązany jest wypełnić wszystkie wymagane przy rejestracji pola zgodnie z prawdą.</p>
+<p>
+	3. Zamieszczone na stronach sklepu informacje oraz ceny nie stanowią oferty w rozumieniu art. 66 Kodeksu cywilnego i stanowią jedynie zaproszenie do zawarcia umowy. Prezentowany katalog produktów nie stanowi oferty handlowej w rozumieniu Kodeksu Cywilnego, a ma jedynie charakter informacyjny.</p>
+<p>
+	4. Przyjęcie przez Sklep internetowy każdego złożonego zamówienia jest potwierdzane automatycznie drogą mailową. Otrzymanie informacji zwierającej wygenerowane automatycznie potwierdzenie wpływu zamówienia nie jest równoznaczne z zawarciem umowy a jedynie informacją o tym, że zamówienie zostało przyjęte do weryfikacji. Do zawarcia umowy sprzedaży dochodzi w momencie ostatecznego potwierdzenia zamówienia przez pracownika Spółki, w formie telefonicznej.</p>
+<p>
+	5. Do czasu ostatecznego potwierdzenia zamówienia przez pracownika Spółki Klient może wprowadzić ewentualne korekty do złożonego zamówienia.</p>
+<p>
+	6. Wysyłając zamówienie, Klient oświadcza, że zapoznał się z treścią Regulaminu Sklepu internetowego, w szczególności z możliwością odstąpienia od umowy, zgodnie z ustawą z dnia 2 marca 2000 roku "O ochronie niektórych praw konsumentów oraz o odpowiedzialności za szkodę wyrządzoną przez produkt niebezpieczny" (Dz.U. 2000 Nr 22, poz. 271) i akceptuje jego postanowienia.</p>
+<p>
+	7. Sklep internetowy przyjmuje zamówienia przez całą dobę we wszystkie dni roku. Zamówienia złożone w niedziele i dni ustawowo wolne od pracy rozpatrywane będą w kolejności ich złożenia w pierwszym dniu roboczym następującym po dniu, w którym zamówienie zostało złożone.</p>
+<p>
+	8. Sklep internetowy zastrzega sobie prawo odrzucenia błędnie lub częściowo wypełnionych formularzy zamówienia.</p>
+<p>
+	9. Zamówienia w Sklepie internetowym są realizowane wyłącznie na terenie Polski. Zamówienie zostanie zrealizowane pod warunkiem, że towar jest dostępny w sieci sklepów stacjonarnych Spółki. W przypadku niedostępności części towarów objętych zamówieniem Klient jest informowany o stanie zamówienia i podejmuje decyzję co do sposobu jego realizacji (częściowa realizacja, wydłużenie czasu oczekiwania, anulowanie całości zamówienia).</p>
+<p>
+	10. Ceny podawane w Sklepie internetowym są&nbsp; wyrażone w złotych polskich (PLN) i są cenami brutto, zawierającymi należne podatki i cła.</p>
+<p>
+	11. Na wartość zamówienia składają się: cena zamówionego towaru oraz koszt dostawy. Koszt dostawy mogą być uzależnione od wybranej przez Klienta formy płatności oraz od wartości zamówienia.</p>
+<p>
+	12. Sklep internetowy zastrzega sobie prawo do zmiany cen towaru, wprowadzania bądź usuwania towarów zamieszczonych na stronie internetowej pod którą działa Sklep internetowy a także do przeprowadzania i odwoływania akcji promocyjnych oraz wyprzedażowych. Skorzystanie przez Sklep internetowy z powyższego uprawnienia nie wypływa na zamówienia, które zostały potwierdzone telefonicznie przez pracownika Spółki.</p>
+<p>
+	13. Klient może wybrać następujące formy płatności za zamówiony towar z dostawą: przelew internetowy lub płatność przy odbiorze (za pobraniem).</p>
+<p>
+	14. Istnieje bezwzględny zakaz dostarczania przez Sklep internetowy treści o charakterze bezprawnym.</p>
+<p>
+	15. Do sprzedaży prowadzonej przez Sklep internetowy w formie promocji oraz wyprzedaży przeznaczona może być ograniczona liczba towarów. Realizacja zamówień następuje według kolejności wpływania potwierdzonych zamówień, aż do wyczerpania się zapasów objętych wyprzedażą lub promocją.</p>
+<p>
+	16. Sklep internetowy zastrzega iż zamieszone na stronie internetowej pod którą działa zdjęcia prezentujące dostępny towar mają jedynie charakter poglądowy. Rzeczywisty wygląd, w tym w szczególności kolor i struktura materiału mogą odbiegać od prezentowanego na zdjęciach, bowiem mogą zależeć od ustawień monitora, nasycenia kolorów itp. W przypadku gdyby zakupiony towar nie spełniał wymagań Zamawiający y jest uprawniony do odstąpienia od umowy, w terminie 10 dni od wydania towaru.</p><br>
+<p align="left">
+	<b>3. REALIZACJA ZAMÓWIEŃ</b></p><br>
+<p>
+	1. Sklep internetowy będzie dążył do weryfikacji i potwierdzenia złożonego zamówienia najpóźniej w terminie 48 godzin od momentu złożenia przez Klienta zamówienia z zastrzeżeniem pkt 2.7.</p>
+<p>
+	2. Sklep internetowy zastrzega sobie prawo do wydłużenia wskazanego terminu, w przypadku dużej ilości zamówień, konieczności kompletacji zamówienia składającego się z kilku produktów lub w razie wystąpienia innych szczególnych i wyjątkowych przypadków W przypadku wystąpienia okoliczności powodujących wydłużenia podstawowego terminu weryfikacji i potwierdzenia zamówienia, Sklep internetowy niezwłocznie poinformuje o tym fakcie Klienta telefonicznie lub mailowo. W takich sytuacjach Klient ma prawo rezygnacji ze złożonego zamówienia.</p>
+<p>
+	3. Weryfikacja i potwierdzenie złożonego zamówienia polega na:</p>
+<p>
+	a) sprawdzeniu przez Sklep internetowy kompletności wysłanych danych,</p>
+<p>
+	b) zbadaniu dostępności towaru oraz zweryfikowanie ceny zamówionego towaru.</p>
+<p>
+	c) skontaktowaniu się telefonicznie z Klientem celem potwierdzenia danych przedstawionych w zamówieniu oraz ilości, rodzaju i ceny zamawianego towaru.</p>
+<p>
+	d) zweryfikowaniu dokonania płatności za zamówienie -&nbsp; w przypadku płatności kartą lub e-przelewem pobraniu wcześniej zablokowanej kwota, na jaką opiewało zamówienie; w przypadku płatności przelewem, sprawdzeniu czy kwota na jaką opiewało zamówienie wpłynęła na rachunek bankowy Spółki.</p>
+<p>
+	e) wysłaniu Klientowi w formie elektronicznej potwierdzenia wysłania zamówienia wraz z numerem listu przewozowego oraz informacjami dotyczącymi firmy kurierskiej.</p><br>
+<p align="left">
+	<b>4. WARUNKI DOSTAWY TOWARÓW</b></p><br>
+<p>
+	1. Dostawa towaru odbywa się na adres wskazany przez Klienta za pośrednictwem firmy kurierskiej. Z przyczyn technicznych nie ma możliwości osobistego odbioru towaru.</p>
+<p>
+	2. W momencie odbioru przesyłki Klient ma prawo do sprawdzenia zawartości paczki w obecności pracownika firmy doręczającej. Jeżeli przesyłka nie zawiera wskazanego w zamówieniu towaru, towar jest inny niż zamawiany lub towar jest uszkodzony, Klient ma prawo omówić przyjęcia przesyłki, o czym powinien niezwłocznie powiadomić Spółkę telefonicznie kontaktując się z przedstawicielem Biura Obsługi Klienta Sklepu internetowego pod numerem telefonu 608 510 710 lub za pośrednictwem poczty elektronicznej na adres sklepinternetowy@skiteam.pl.</p>
+<p>
+	3. Przewidywany czas dostawy można określić po wpisaniu numeru listu przewozowego na stronie firmy kurierskiej, której adres zostanie przekazany w elektronicznym potwierdzeniu wysłania zamówienia</p>
+<p>
+	4. Do każdej przesyłki wystawiany jest dowód zakupu (paragon lub faktura VAT).</p>
+<p>
+	5. Sklep internetowy nie ponosi odpowiedzialności za niedostarczenie towaru lub opóźnienie w jego dostawie spowodowane błędnym lub niedokładnym adresem podanym przez Klienta.</p><br>
+<p align="left">
+	<b>5. REKLAMACJE I GWARANCJE</b></p><br>
+<p>
+	1. Towary mogą być objęte gwarancją producenta lub dystrybutora. Szczegółowe warunki gwarancji i czas jej trwania podawane są na każde żądanie Klienta a odpowiednie dokumenty gwarancyjne dostarczane są Klientowi wraz z towarem.</p>
+<p>
+	2. Jeżeli otrzymany towar jest wadliwy, Klient może skorzystać, według swojego wyboru, z uprawnień gwarancyjnych bezpośrednio u gwaranta (producenta lub dystrybutora) we wskazanych serwisach lub z uprawnień przysługujących mu od sprzedawcy z tytułu niezgodności towaru z umową. Dochodzenie roszczeń z tytułu gwarancji nie wyłącza prawa Klienta do zgłoszenia niezgodności towaru z umową.</p>
+<p>
+	3. Wszystkie towary zakupione w Sklepie internetowym mogą być reklamowane z tytułu niezgodności towaru z umową z zachowaniem odpowiednich terminów i warunków określonych w ustawie z dnia 27 lipca 2002 roku o szczególnych warunkach sprzedaży konsumenckie oraz zmianie Kodeksu cywilnego (Dz. U. 2000 Nr 141, poz. 1176 z późn. zm.)</p>
+<p>
+	4. W przypadku stwierdzenia niezgodności zakupionego towaru z umową Klientowi przysługuje prawo do złożenia reklamacji w Sklepie internetowym. Uprawnienie to przysługuje Klientowi w ciągu 2 (dwóch) lat od daty doręczenia towaru, jednakże Klient musi zawiadomić Sklepu o niezgodności/niezgodnościach w ciągu 2 (dwóch) miesięcy od chwili wykrycia niezgodności. Wzór reklamacji jest dostępny do pobrania na stronie www.skiteam.com.pl.</p>
+<p>
+	5. W wyżej wskazanym przypadku Klient powinien odesłać towar przesyłką pocztową ekonomiczną na adres sklepu z którego dotarła przesyłka wraz z adnotacją towar niezgodny z umową. Do odsyłanego towaru należy dołączyć dokument potwierdzający zakup towaru wraz z wypełnionym drukiem reklamacji.</p>
+<p>
+	6. Sklep, najpóźniej w ciągu 14 dni od daty otrzymania przesyłki z reklamowanym towarem, ustosunkuje się do złożonej reklamacji i poinformuje Klienta o dalszym postępowaniu. W przypadku uznania reklamacji, towar uszkodzony zostanie naprawiony lub wymieniony na inny, pełnowartościowy. Jeśli nie będzie to możliwe, Sklep internetowy zwróci Klientowi równowartość ceny towaru lub zaoferuje mu inne, dostępne w Sklepie internetowym towary do wyboru o parametrach nie gorszych niż uprzednio zakupiony. Klient może także wybrać inny produkt o niższej wartości i w takim przypadku Sklep internetowy zwraca Klientowi różnicę pomiędzy wartością pierwotnie zakupionego produktu a nowo zakupionym produktem.</p>
+<p>
+	7. Koszty związane z odesłaniem towaru reklamowanego zostaną zwrócone Klientowi, niezwłocznie, nie później niż w ciągu 3 dni roboczych, po pozytywnym rozpatrzeniu złożonej reklamacji.</p><br>
+<p align="left">
+	<b>6. OSTĄPIENIE OD UMOWY</b></p><br>
+<p>
+	1. Zgodnie z ustawą z dnia 2 marca 2000 roku o ochronie niektórych praw konsumentów oraz o odpowiedzialności za szkodę wyrządzoną przez produkt niebezpieczny (Dz. U. 2000 Nr 22 poz 271 z późn. zm.) Klient może odstąpić od umowy bez podania powodu w ciągu 10 dni od daty odebrania przesyłki. Klient powinien złożyć pisemne oświadczenie o odstąpieniu od umowy oraz dokonać zwrotu towaru do Sklepu w stanie niepogorszonym. Termin uważa się za zachowany jeśli oświadczenie zostanie wysłane przed jego upływem. Oświadczenie o odstąpieniu od umowy powinno zostać wysłane na adres: sklepinternetowy@skiteam.pl. Wzór oświadczenia o odstąpieniu od umowy znajduje się gotowy do pobrania pod adresem www.skiteam.pl/pdf/wzor_odstapienie.pdf.</p>
+<p>
+	2. Zwrot towaru w ramach odstąpienia od umowy jest możliwy, jeśli towar zostaje oddany w stanie nie zmienionym(chyba że zmiana była konieczna w granicach zwykłego zarządu) ani nie został w żaden sposób zniszczony, zabrudzony, zmoczony czy też w inny widoczny lub niewidoczny sposób uszkodzony. Zwrot towaru jest nie możliwy w sytuacji, w której specyfika towaru nie pozwala na jego zwrot po użyciu. Zwracany towar musi być kompletny. Powyższe nie dotyczy przypadków wystąpienia niezgodności towaru z umową, w rozumieniu ustawy z dnia 27 lipca 2002 roku o szczególnych warunkach sprzedaży konsumenckiej oraz o zmianie Kodeksu cywilnego (Dz. U. 2002, Nr. 141, poz. 1176 z późn. zm.).</p>
+<p>
+	3. W przypadku złożenia oświadczenia o odstąpieniu umowę uważa się za niezawartą, a Strony zwracają sobie to co wzajemnie świadczyły. Klient zwraca towar najpóźniej w ciągu 14 (czternastu) dni od odstąpienia od umowy wraz z oświadczeniem o zwrocie na adres wskazany przy doręczeniu przesyłki. Sklep internetowy dokonuje zwrotu należności za zwrócony towar w ciągu 7 (siedmiu) dni roboczych od chwili otrzymania towaru.</p>
+<p>
+	4. Jeżeli nie umówiono się inaczej, prawo odstąpienia od umowy zawartej na odległość nie przysługuje&nbsp; w wypadkach:</p>
+<p>
+	a) świadczenia usług rozpoczętego, za zgodą konsumenta, przed upływem terminu do złożenia oświadczenia o odstąpieniu od umowy,</p>
+<p>
+	b) dotyczących nagrań audialnych i wizualnych oraz zapisanych na informatycznych nośnikach danych po usunięciu przez konsumenta ich oryginalnego opakowania,</p>
+<p>
+	c) umów dotyczących świadczeń, za które cena lub wynagrodzenie zależy wyłącznie od ruchu cen na rynku finansowym,</p>
+<p>
+	d) świadczeń o właściwościach określonych przez konsumenta w złożonym przez niego zamówieniu lub ściśle związanych z jego osobą,</p>
+<p>
+	e) świadczeń, które z uwagi na ich charakter nie mogą zostać zwrócone lub których przedmiot ulega szybkiemu zepsuciu,</p>
+<p>
+	f) dostarczania prasy,</p>
+<p>
+	g) usług w zakresie gier hazardowych.</p><br>
+<p align="left">
+	<b>7. OCHRONA DANYCH</b></p><br>
+<p>
+	1. Klient składając zamówienie w Sklepie internetowym wyraża zgodę na umieszczenie swoich danych osobowych w bazie Spółki oraz na ich przetwarzanie dla celów realizacji umowy. Podanie danych osobowych przez Klienta jest dobrowolne, jednak brak zgody na ich przetwarzanie uniemożliwia zrealizowanie zamówienia przez Sklep internetowy. Klient ponosi odpowiedzialność za podanie nieprawdziwych danych osobowych. W celu prawidłowej realizacji umowy Klient powinien aktualizować swoje dane (np. adresowe).</p>
+<p>
+	2. Klient ma prawo dokonania zmiany bądź uzupełnienia udostępnionych danych osobowych.</p>
+<p>
+	3. Dane osobowe są chronione zgodnie z ustawą z dnia 29 sierpnia 1997 r. o ochronie danych osobowych (Dz. U. Nr 101 z 2002 r., poz. 926 z późn. zm.) w sposób uniemożliwiający dostęp do nich osób nieuprawnionych.</p>
+<p>
+	4. W przypadku wyrażenia przez Klienta dodatkowej zgody dane osobowe będą przetwarzane przez Spółkę w celu informowania Klienta o nowych towarach, promocjach i usługach dostępnych w Sklepie internetowym oraz w sieci sklepów stacjonarnych, w tym zwłaszcza w formie Newslettera Ski Team. Klient w każdym czasie po uprzednim poinformowaniu Sklepu może zrezygnować z subskrypcji Newslettera Ski Team. Zaprzestanie korzystania z Newslettera Ski Team następuje poprzez zalogowanie się do panelu klienta i odznaczenie pozycji Newsletter, jednakże każde wyraźne oświadczenie Konsumenta o rezygnacji z subskrypcji Newslettera Ski Team będzie wiążące dla Sklepu.</p><br>
+<p align="left">
+	<b>8. PROCEDURY BEZPIECZEŃSTWA</b></p><br>
+<p>
+	1. Spółka przestrzega procedur bezpieczeństwa zgodnie z wymogami prawa.</p>
+<p>
+	2. Sklep internetowy stosuje pliki cookies w celu świadczenia usług na najwyższym poziomie, w tym w sposób dostosowany do indywidualnych potrzeb.</p>
+<p>
+	3. Dla korzystania z usług Sklepu internetowego konieczne jest łączne spełnianie następujących wymogów technicznych:</p>
+<p>
+	a) posiadanie aktywnego konta poczty elektronicznej (adresu email),</p>
+<p>
+	b) posiadanie dostępu do urządzenia umożliwiającego przeglądanie stron internetowych z zainstalowanym system operacyjnym umożliwiającym działanie tego urządzenia z zainstalowaną przeglądarką internetową,</p>
+<p>
+	c) posiadanie aktywnego połączenia z siecią Internet,</p><br>
+<p align="left">
+	<b>9. ODPOWIEDZIALNOŚĆ</b></p><br>
+<p>
+	1. Sklep internetowy nie ponosi odpowiedzialności za problemy techniczne bądź ograniczenia techniczne występujące w sprzęcie komputerowym, urządzeniu końcowym, systemie teleinformatycznym oraz infrastrukturze telekomunikacyjnej, z którego korzysta Klient, a które uniemożliwiają Klientowi poprawne korzystanie ze Sklepu internetowego.</p>
+<p>
+	2. Klient jest wyłącznie odpowiedzialny za zapewnienie technicznej zgodności pomiędzy wykorzystywanym przez siebie w celu korzystania ze Sklepu internetowego sprzętem komputerowym lub urządzeniem końcowym oraz systemem teleinformatycznym lub telekomunikacyjnym, a Sklepem internetowym.</p>
+<p>
+	3. Sklep internetowy nie ponosi odpowiedzialności za:</p>
+<p>
+	a) utratę przez Klienta danych spowodowaną awarią sprzętu, systemu lub też innymi okolicznościami z przyczyn nieleżących po stronie Spółki,</p>
+<p>
+	b) skutki korzystania ze Sklepu internetowego przez Klienta w sposób sprzeczny z obowiązującym prawem, postanowieniami niniejszego Regulaminu lub przyjętymi w tym zakresie zwyczajami,</p>
+<p>
+	c) szybkość przesyłu danych i związane z tym ograniczenia, stanowiące skutek zaistnienia okoliczności m.in. o charakterze technicznym i technologicznym oraz infrastrukturalnym,</p>
+<p>
+	d) za treść reklam zamieszczanych w Sklepie internetowym przez podmioty trzecie.</p>
+<p>
+	4. Spółka nie ponosi odpowiedzialności za niedostępność Sklepu internetowego z powodu siły wyższej, a także działań lub zaniechań Klienta oraz osób trzecich, za których działania lub zaniechania Klient ponosi odpowiedzialność.</p>
+<p>
+	5. Spółka zastrzega sobie ponadto możliwość zawieszenia lub zakończenia świadczenia usług w Sklepie internetowym, w szczególności z uwagi na konieczność konserwacji, przeglądu lub rozbudowy bazy technicznej, w przypadku gdy nie naruszy to praw Klienta.</p><br>
+<p align="left">
+	<b>10. POSTANOWIENIA KOŃCOWE</b></p><br>
+<p>
+	1. Firma WinterShop zastrzega sobie prawo do:</p>
+<p>
+	a) zmiany cen oraz ilości towarów w ofercie sklepu internetowego w ciągu dnia, co nie dotyczy zamówień już potwierdzonych,</p>
+<p>
+	b) wycofania poszczególnych produktów z oferty sklepu internetowego, co nie dotyczy zamówień już potwierdzonych,</p>
+<p>
+	c) wprowadzania nowych towarów do oferty sklepu internetowego,</p>
+<p>
+	d) przeprowadzania i odwoływania wszelkiego rodzaju akcji promocyjnych i wyprzedaży, co nie dotyczy zamówień już potwierdzonych w ramach tych akcji i wyprzedaży.</p>
+<p>
+	2. W kwestiach nieuregulowanych zastosowanie znajdują przepisy prawa polskiego w tym zwłaszcza Kodeksu cywilnego, Ustawy o szczególnych warunkach sprzedaży konsumenckiej oraz zmianie Kodeksu cywilnego oraz Ustawy o ochronie niektórych praw konsumentów oraz odpowiedzialności za szkodę wyrządzoną przez produkt niebezpieczny.</p>
+<p>
+	3. Jeżeli którekolwiek z postanowień niniejszego Regulaminu okaże się nieważne lub niemożliwe do wykonania, pozostanie to bez wpływu na pozostałe postanowienia Regulaminu, które pozostaną skuteczne i wiążące dla Klienta i Sklepu, a Sklep niezwłocznie podejmie niezbędne kroki w celu zastąpienia nieważnego lub niemożliwego postanowienia innym postanowieniem, możliwie najbliższym intencji Sklepu wyrażonej w postanowieniu zastępowanym.</p>
+<p>
+	4. Śródtytuły zawarte w niniejszym Regulaminie mają jedynie znaczenie orientacyjne dla Klienta i nie stanowią wiążącej treści Regulaminu.</p>
+<p>
+	5. Klient może uzyskać dostęp do niniejszego Regulaminu w każdym czasie, nieodpłatnie za pośrednictwem strony internetowej www.skiteam.com.pl. oraz sporządzić jego wydruk.</p>
+<p>
+	6. W zakresie usług świadczonych drogą elektroniczną niniejszy Regulamin jest regulaminem, o którym mowa w art. 8 ustawy z dnia 18 lipca 2002 roku o świadczeniu usług drogą elektroniczną (Dz. U. z 2002 r. Nr 144, poz. 1204 z późn. zm.).</p>
+<p>
+	7. Sklep internetowy nie prowadzi sprzedaży hurtowej. W przypadku, gdy Klient wyrazi chęć zakupów hurtowych powinien skontaktować się ze sklepem pod adresem: info@wintershop.pl</p><br>
+
+            </div>
+          
+        </div>
+      
+<div class="clear"></div>
+
+</div>
+
+<table class="footer">
+  <tr>
+    <td>
+    <b>Sklep narciarski<br>
+    WinterShop</b><br>
+    ul. Czarnowiejska 3<br>
+    31-332 Kraków<br>
+    </td>
+    <td>
+    <b>Biuro Obsługi Klienta</b><br>
+    <b>Problemy, Reklamacje</b><br>
+    <b>Realizacja Zamówień</b><br>
+    </td>
+    <td>
+		<b>Skontaktuj się z nami!</b><br>
+		<a class="footermail" href="mailto:info@wintershop.pl">info@guitarcenter.pl</a><br>
+    13 614 77 78<br>
+    511 502 050<br>
+   
+    </td>
+   
+  </tr>
+	
+
+</table>
+
 </body>
 </html>
+
+
+
+
+

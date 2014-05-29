@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+#main{
+width: auto;
+height:800px;
+float:left;
+background:#CC9;
+border:solid;
+border-radius:10px;
+
+
+}
+.border_box{
+text-align: left;
+font-size:15px;
+vertical-align: top;
+font-weight:600;
+font-family:"Comic Sans MS", cursive;
+}
+.box{
+text-align: left;
+font-size:15px;
+vertical-align: top;
+font-family:"Comic Sans MS", cursive;
+}
+.date_box{
+text-align: left;
+font-size:10px;
+vertical-align: top;
+font-family:"Comic Sans MS", cursive;
+}
+input[type="text"]{
+border-radius:3px;
+font-family:Verdana, Geneva, sans-serif;
+}
+input[type="password"]{
+border-radius:3px;
+font-family:Verdana, Geneva, sans-serif;
+}
+select{
+border-radius:3px;
+font-family:Verdana, Geneva, sans-serif;
+}
